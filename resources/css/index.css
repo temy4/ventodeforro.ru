@@ -1,0 +1,45 @@
+#content {
+	text-align: center;
+}
+
+div.main-pics {
+	float: left;
+	margin-left: 25px;
+	margin-right: 10px;
+}
+
+div#main-pic-forro {
+	
+}
+
+div#main-pic-trips {
+	padding-top: 100px;
+}
+
+div#main-pic-classes {
+	padding-top: 25px;
+}
+
+div#main-pic-faq {
+	
+}
+
+#marker.forro{
+	margin-left: -26px;
+	margin-top: 10px;
+}
+
+#marker.trips{
+	margin-left: -26px;
+	margin-top: 450px;
+}
+
+#marker.classes{
+	margin-left: -26px;
+	margin-top: 10px;
+}
+
+#marker.faq{
+	margin-left: -26px;
+	margin-top: 435px;
+}
