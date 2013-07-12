@@ -7,7 +7,7 @@ function getMenu($main = true){
 	$ret = array();
 	
 	foreach ($routes as $path => $route) {
-		if($main == $route['main-menu']){
+		if($main == $route['main-menu'] && !$route['hidden']){
 			$ret[$path] = $route;
 		}
 	}
@@ -20,17 +20,14 @@ function getPage(){
 
 	$p = isset( $_GET['p'] ) ? $_GET['p'] : '/';
 	if( array_key_exists($p, $routes) && file_exists('./pages/'.$routes[$p]['content']) ) {
+		if(isset($routes[$p]['code'])){
+			http_response_code($routes[$p]['code']);
+		}
 		return $routes[$p];
 	}
 	else {
-		header("HTTP/1.0 404 Not Found");
-		
-		return array(
-			'title' => 'страница не найдена',
-			'content' => '404.html',
-			'addCSS'  => array(),
-			'addJS'   => array()
-		);
+		http_response_code(404);
+		return $routes['notfound'];
 	}
 }
 ?>
