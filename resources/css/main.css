@@ -163,7 +163,9 @@ span{
 		font-size: 20px;
 		margin: 10px;
 	}
-
+	#header #main-menu li.mobile{
+		display: block;
+	}
 	#header #main-menu a, #main-menu a:active, #main-menu a:visited {
 		color: #3A92AE;
 		text-decoration: none;
@@ -184,6 +186,8 @@ span{
 -----------------------------------------------------------------------------*/
 #content {
 	padding: 0 0 100px;
+	margin-left: 27px;
+	margin-top: 10px;
 }
 
 	#content #body {
@@ -293,8 +297,8 @@ div.br{
 	margin-left: -25px;
 }
 
-.marker.marker.green { background: #56AD21; }
-.marker.marker.green:before{ border-right: 26px solid #95C677; }
+.marker.green { background: #56AD21; }
+.marker.green:before{ border-right: 26px solid #95C677; }
 .marker.green:after{ border-left: 26px solid #56AD21; }
 
 .marker.yellow { background: #FFD11A; }
@@ -316,6 +320,34 @@ div.br{
 .marker.cyan { background: #3A92AE; }
 .marker.cyan:before{ border-right: 26px solid #81b3c4; }
 .marker.cyan:after{ border-left: 26px solid #3A92AE; }
+
+.marker.mobile.purple:before{ border-right-color: #721e9a; }
+.marker.mobile.orange:before{ border-right-color: #FF401B; }
+.marker.mobile.blue:before{ border-right-color: #4396EA; }
+.marker.mobile.yellow:before{ border-right-color: #FFD11A; }
+.marker.mobile.green:before{ border-right-color: #56AD21; }
+.marker.mobile.cyan:before{ border-right-color: #3A92AE; }
+
+.marker.title.mobile{
+	margin-left: 35px;
+	margin-bottom: 35px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.marker.title.mobile:before{
+	content:"";
+	position: absolute;
+	left: -25px;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border-right-width: 26px;
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+}
+
+
 
 blockquote {
 	font-size: 18px;
@@ -374,4 +406,8 @@ div.point-label{
 }
 div.br{
 	clear: both;
+}
+ul#menu-small-screen{
+	display: none;
+	width: 100%;
 }

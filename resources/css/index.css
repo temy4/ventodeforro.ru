@@ -1,7 +1,11 @@
 #content {
-	
+	margin-left: 0px;
+	margin-top: 0px;
 }
-
+div.#main-body{
+	width: 1000px;
+	min-width: 1000px;
+}
 div.main-pics {
 	float: left;
 	margin-left: 28px;

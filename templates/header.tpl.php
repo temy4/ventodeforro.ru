@@ -1,4 +1,5 @@
         <header id="header">
+            <ul id="menu-small-screen"></ul>
             <a href="<?=$basePath?>"><img src="<?=$basePath?>resources/img/logo.jpg" id="logo" alt="<?=$siteName?>" width="300" /></a>
             <ul id="main-menu">
                 <?php

@@ -9,7 +9,11 @@
         <meta name="description" content="<?= $metaDescription?>" />
         <meta name="keywords" content="<?= $metaKeywords?>" />
 
-        <link rel="stylesheet" href="<?=$basePath?>resources/css/main.css">
+        <link rel="stylesheet" type="text/css" href="<?=$basePath?>resources/css/main.css">
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="<?=$basePath?>resources/js/responsive.js"></script>
+
         <?php
         	$addCSS = $page['addCSS'];
         	$addJS = $page['addJS'];
@@ -29,7 +33,6 @@
 
 			<?php include('templates/header.tpl.php'); ?>
 	        
-
 	        <div id="content">
 	            <?php include('pages/'.$page['content']) ?>
 	        </div><!-- #content-->
