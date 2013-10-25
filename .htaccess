@@ -3,7 +3,6 @@ RewriteBase /ventodeforro.ru/
 
 ErrorDocument 403 /ventodeforro.ru/forbidden/
 ErrorDocument 404 /ventodeforro.ru/notfound/
-
 RewriteRule (images|resources)[\/]{0,}$ - [F]
 RewriteRule pages.*?\.html$ - [F]
 RewriteRule templates.*?\.php$ - [F]

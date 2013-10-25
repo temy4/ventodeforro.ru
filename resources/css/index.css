@@ -11,6 +11,13 @@ div.main-pics {
 	margin-left: 28px;
 	margin-right: 5px;
 }
+	div.main-pics img{
+	    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		-moz-border-radius:4px;
+
+	}
 
 div#main-pic-forro {
 	
@@ -47,4 +54,7 @@ div#main-pic-faq {
 .marker.faq{
 	margin-left: -26px;
 	margin-top: 435px;
+}
+#header {
+	padding-bottom: 40px;
 }

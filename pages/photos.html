@@ -1,4 +1,130 @@
 	<div class="marker cyan title"><h1>фотографии</h1></div>
 	<div id="body">
-			<h2></h2>
+		<div id="gallery" class="tile medium">
+			<ul>
+				<li>
+					<a href="<?=$basePath?>images/gallery/1.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/1.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/2.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/2.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/3.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/3.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/4.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/4.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/5.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/5.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/6.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/6.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/7.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/7.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/8.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/8.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/9.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/9.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/10.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/10.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/11.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/11.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/12.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/12.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/13.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/13.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/14.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/14.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="<?=$basePath?>images/gallery/15.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/15.jpg" alt="">
+					</a>
+				</li>
+				<!-- <li>
+					<a href="<?=$basePath?>images/gallery/16.jpg">
+						<img class="gallery" src="<?=$basePath?>images/gallery/thumbs/16.jpg" alt="">
+					</a>
+				</li> -->
+			</ul>
+			<!-- <img class="gallery" src="http://placehold.it/350x150/69D2E7/ffffff"><img class="gallery" src="http://placehold.it/320x180/A7DBD8/ffffff"><img class="gallery" src="http://placehold.it/320x300/E0E4CC/ffffff"><img class="gallery" src="http://placehold.it/472x500/F38630/ffffff"><img class="gallery" src="http://placehold.it/540x360/FA6900/ffffff"><img class="gallery" src="http://placehold.it/800x600/ECD078/ffffff"><img class="gallery" src="http://placehold.it/400x120/D95B43/ffffff"><img class="gallery" src="http://placehold.it/300x300/C02942/ffffff"><img class="gallery" src="http://placehold.it/320x500/542437/ffffff"><img class="gallery" src="http://placehold.it/450x300/53777A/ffffff"> -->
+		</div>
 	</div>
+	<div class="br"></div>
+	<script>
+		$(document).ready(function(){
+
+		    //global variables
+		    var $timer = 0;
+		    var $counter;
+
+		    function expand(e) {
+		        $timer += 500;
+
+		        if ($timer == 1500){
+		            clearInterval($counter);
+		            $timer = 0;
+		            e.addClass('expand');
+		        }
+		    }
+
+		    $('#deepGallery ul li a').hover(function(){
+		        var $e = $(this);
+		        $counter = setInterval(function() {
+		            expand($e);
+		        }, 500);
+		    }, function() {
+		        clearInterval($counter);
+		        $timer = 0;
+		        $(this).removeClass('expand');
+		    });
+
+			$('#gallery a').lightBox({
+				overlayBgColor: '#FFF',
+				imageLoading: '',
+				imageBtnClose: '../resources/img/close.png',
+				imageBtnPrev: '../resources/img/prev.png',
+				imageBtnNext: '../resources/img/next.png',
+				overlayOpacity: 0.5,
+				containerResizeSpeed: 350,
+				txtImage: '',
+				txtOf: 'из'
+			});
+		});
+	</script>

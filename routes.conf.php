@@ -1,7 +1,7 @@
 <?php
 $routes = array(
 	'/' => array(
-		'title' => 'главная',
+		'title' => 'Главная',
 		'content' => 'index.html',
 		'addCSS'  => array('index.css'),
 		'addJS'   => array(),
@@ -9,7 +9,7 @@ $routes = array(
 		'hidden' => false
 	),
 	'about-forro' => array(
-		'title' => 'форро',
+		'title' => 'Форро',
 		'content' => 'about-forro.html',
 		'addCSS'  => array(),
 		'addJS'   => array(),
@@ -17,15 +17,15 @@ $routes = array(
 		'hidden' => false
 	),
 	'trips' => array(
-		'title' => 'путешествия',
+		'title' => 'Путешествия',
 		'content' => 'trips.html',
-		'addCSS'  => array(),
-		'addJS'   => array(),
-		'main-menu' => false,
+		'addCSS'  => array('photos.css', 'vendor/jquery.lightbox-0.5.css'),
+		'addJS'   => array('vendor/jquery.lightbox-0.5.pack.js'),
+		'main-menu' => true,
 		'hidden' => false
 	),
 	'classes' => array(
-		'title' => 'занятия',
+		'title' => 'Занятия',
 		'content' => 'classes.html',
 		'addCSS'  => array(),
 		'addJS'   => array(),
@@ -33,23 +33,23 @@ $routes = array(
 		'hidden' => false
 	),
 	'faq' => array(
-		'title' => 'вопрос-ответ',
+		'title' => 'Вопрос-ответ',
 		'content' => 'faq.html',
 		'addCSS'  => array(),
 		'addJS'   => array(),
 		'main-menu' => false,
 		'hidden' => false
 	),
-	'teachers' => array(
-		'title' => 'преподаватели',
-		'content' => 'teachers.html',
-		'addCSS'  => array(),
-		'addJS'   => array(),
-		'main-menu' => true,
-		'hidden' => false
-	),
+	// 'teachers' => array(
+	// 	'title' => 'преподаватели',
+	// 	'content' => 'teachers.html',
+	// 	'addCSS'  => array(),
+	// 	'addJS'   => array(),
+	// 	'main-menu' => true,
+	// 	'hidden' => false
+	// ),
 	'usefull' => array(
-		'title' => 'копилочка',
+		'title' => 'Копилочка',
 		'content' => 'usefull.html',
 		'addCSS'  => array(),
 		'addJS'   => array(),
@@ -57,31 +57,31 @@ $routes = array(
 		'hidden' => false
 	),
 	'photos' => array(
-		'title' => 'фотографии',
+		'title' => 'Фотографии',
 		'content' => 'photos.html',
-		'addCSS'  => array(),
-		'addJS'   => array(),
+		'addCSS'  => array('photos.css', 'vendor/jquery.lightbox-0.5.css'),
+		'addJS'   => array('vendor/jquery.lightbox-0.5.pack.js'),
 		'main-menu' => true,
 		'hidden' => false
 	),
 	'events' => array(
-		'title' => 'события',
+		'title' => 'События',
 		'content' => 'events.html',
-		'addCSS'  => array(),
-		'addJS'   => array(),
-		'main-menu' => true,
+		'addCSS'  => array('events.css', 'vendor/events_map.css'),
+		'addJS'   => array('vendor/craftmap.js'),
+		'main-menu' => false,
 		'hidden' => false
 	),
 	'contacts' => array(
-		'title' => 'контакты',
+		'title' => 'Контакты',
 		'content' => 'contacts.html',
-		'addCSS'  => array(),
+		'addCSS'  => array('contacts.css'),
 		'addJS'   => array(),
 		'main-menu' => true,
 		'hidden' => false
 	),
 	'forbidden' => array(
-		'title' => 'доступ запрещен',
+		'title' => 'Доступ запрещен',
 		'content' => '403.html',
 		'addCSS'  => array(),
 		'addJS'   => array(),
@@ -90,7 +90,7 @@ $routes = array(
 		'code' => 403
 	),
 	'notfound' => array(
-		'title' => 'страница не найдена',
+		'title' => 'Страница не найдена',
 		'content' => '404.html',
 		'addCSS'  => array(),
 		'addJS'   => array(),

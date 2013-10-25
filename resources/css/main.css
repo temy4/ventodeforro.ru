@@ -44,10 +44,28 @@ span{
 	color: gray;
 	font-size: 12px;
 }
+span.icon{
+	display: block;
+	float: left;
+	margin-top: 2px;
+	margin-left: -10px;
+	width: 24px;
+	height: 24px;
+}
+
+span.icon.flag-prt{ background-image: url(../img/flags/portugal.png); 	 }
+span.icon.flag-ger{	background-image: url(../img/flags/germany.png); 	 }
+span.icon.flag-eng{	background-image: url(../img/flags/england.png); 	 }
+span.icon.flag-rus{	background-image: url(../img/flags/russia.png); 	 }
+span.icon.flag-fra{	background-image: url(../img/flags/france.png); 	 }
+span.icon.flag-bra{	background-image: url(../img/flags/brazil.png); 	 }
+span.icon.flag-hol{	background-image: url(../img/flags/netherlands.png); }
+
 #classes-table{
+	margin-left: -15px;
 	font-size: 12px;
 	background: #fff;
-	width: 550px;
+	width: 800px;
 	height: 200px;
 	border-collapse: collapse;
 	text-align: left;
@@ -59,9 +77,13 @@ span{
 	color: #039;
 	padding: 10px 8px;
 	border-bottom: 2px solid #6678b1;
+	text-align: center;
 }
 #classes-table td
 {
+	text-align: center;
+	border-right: 30px solid #fff;
+	border-left: 30px solid #fff;
 	color: #669;
 	padding: 9px 8px 0px 8px;
 }
@@ -144,12 +166,13 @@ span{
 -----------------------------------------------------------------------------*/
 #header {
 	height: 150px;
+	margin-top: 20px;
 }
 	#header #logo {
 		border: 0;
 		margin-left: -20px;
-		margin-top: 20px;
 		float: left;
+		margin-top: 40px;
 	}
 	
 	#header #main-menu{
@@ -162,6 +185,7 @@ span{
 		display: inline;
 		font-size: 20px;
 		margin: 10px;
+		text-transform: lowercase;
 	}
 	#header #main-menu li.mobile{
 		display: block;
@@ -187,13 +211,25 @@ span{
 #content {
 	padding: 0 0 100px;
 	margin-left: 27px;
-	margin-top: 10px;
+	margin-top: 40px;
+	height: 100%;
 }
 
 	#content #body {
 		margin-top: -17px;
 		padding-left: 10px;
 	}
+		#content #body #error {
+			width: 100%;
+			text-align: center;
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+			#content #body #error h1 {
+				margin-top: 10px;
+				margin-bottom: 20px;
+				color:gray;
+			}
 		#content #body img {
 			margin: 10px 10px 10px 0px;
 		}
@@ -204,6 +240,7 @@ span{
 #footer {
 	width: 1000px;
 	margin: -100px auto 0;
+	margin-top: 10px;
 	height: 100px;
 	position: relative;
 	color: gray;
@@ -240,6 +277,7 @@ span{
 			color: gray;
 			margin-left: 12px;
 			margin-right: 12px;
+			text-transform: lowercase;
 		}
 		#footer #sub-menu ul a:hover {
 			text-decoration: underline;
