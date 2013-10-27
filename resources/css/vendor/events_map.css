@@ -4,8 +4,11 @@
 	float:left;
 	width:1000px;
 	height:600px;
+	margin-bottom: 200px;
 }
-
+#footer{
+	padding-bottom: 100px;
+}
 .menu {
 	margin-bottom:40px;
 	text-align:center;
@@ -88,7 +91,7 @@
 }
 
 .controls {
-	position: fixed;
+	position: absolute;
 	z-index: 20;
 	margin-left: 5px;
 	margin-top: 5px;
