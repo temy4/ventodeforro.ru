@@ -67,8 +67,8 @@ $routes = array(
 	'events' => array(
 		'title' => 'События',
 		'content' => 'events.html',
-		'addCSS'  => array('events.css', 'vendor/events_map.css'),
-		'addJS'   => array('vendor/craftmap.js'),
+		'addCSS'  => array('events.css', 'vendor/events_map.css', 'vendor/mosaic.css'),
+		'addJS'   => array('vendor/craftmap.js', 'vendor/mosaic.1.0.1.min.js'),
 		'main-menu' => false,
 		'hidden' => false
 	),

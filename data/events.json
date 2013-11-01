@@ -1,0 +1,48 @@
+{
+	"database":{
+		"russian_events":{
+			"1": {
+				"image": "#{BASEPATH}images/events/russia/1.jpg",
+				"description": "8-10 ноября - семинар по форро с<br>Рудолфуи Маркусом",
+				"link": "http://vk.com/rudolfo_marcus"
+			},
+			"2": {
+				"image": "#{BASEPATH}images/events/russia/6.jpg",
+				"description": "9 ноября - квартет Олинда в Петербурге",
+				"link": "http://vk.com/showbrasil"
+			},
+			"3": {
+				"image": "#{BASEPATH}images/events/russia/2.jpg",
+				"description": "1 декабря - семинар с CESAR NEVES 30 ноября",
+				"link": "http://vk.com/cesar_in_moscow"
+			},
+			"4": {
+				"image": "#{BASEPATH}images/events/russia/3.jpg",
+				"description": "7-8 декабря - зимний семинар с <br>Marquinhos de Forro",
+				"link": "http://vk.com/marquinhos_moscow"
+			},
+			"5": {
+				"image": "#{BASEPATH}images/events/russia/4.jpg",
+				"description": "7 декабря - концерт Трио Бастиао в Питере!",
+				"link": "http://vk.com/trio_bastiao"
+			},
+			"6": {
+				"image": "#{BASEPATH}images/events/russia/5.jpg",
+				"description": "25-26 января - первый семинар по Forró Itaunas",
+				"link": "http://vk.com/forroitaunas"
+			},
+		},
+		"world_events":{
+			"1": {
+				"id": "",
+				"coords": "",
+				"name": "",
+				"link": "",
+				"desc": "",
+				"date": "",
+				"place": "",
+				"flag": ""
+			}
+		}
+	}
+}
