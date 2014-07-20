@@ -1,9 +1,9 @@
 RewriteEngine On
-RewriteBase /ventodeforro.ru/
+RewriteBase /saveart.su/
 
-ErrorDocument 403 /ventodeforro.ru/forbidden/
-ErrorDocument 404 /ventodeforro.ru/notfound/
-RewriteRule (images|resources)[\/]{0,}$ - [F]
+ErrorDocument 403 /saveart.su/forbidden/
+ErrorDocument 404 /saveart.su/notfound/
+RewriteRule (cp)[\/]{0,}$ - [L]
 RewriteRule pages.*?\.html$ - [F]
 RewriteRule templates.*?\.php$ - [F]
 RewriteRule incs.*?\.php$ - [F]
